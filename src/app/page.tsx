@@ -40,7 +40,7 @@ export default function Home() {
                   Book Your Session
                   <ArrowRight className="w-5 h-5" />
                 </Link>
-                <Link href="https://wa.me/919876543210" target="_blank" className="bg-white hover:bg-brand-softpink text-[#25D366] border border-gray-200 px-8 py-4 rounded-full font-semibold text-center transition-colors shadow-sm flex items-center justify-center gap-2 text-lg">
+                <Link href="https://wa.me/918009883366" target="_blank" className="bg-white hover:bg-brand-softpink text-[#25D366] border border-gray-200 px-8 py-4 rounded-full font-semibold text-center transition-colors shadow-sm flex items-center justify-center gap-2 text-lg">
                   <WhatsAppIcon className="w-6 h-6" />
                   WhatsApp Us
                 </Link>
