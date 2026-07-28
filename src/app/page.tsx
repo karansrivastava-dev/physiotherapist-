@@ -62,7 +62,7 @@ export default function Home() {
                   <p className="text-xs font-semibold text-brand-grey uppercase tracking-wider">Google Rating</p>
                 </div>
                 <div>
-                  <h4 className="text-3xl font-serif font-bold text-brand-secondary mb-1">BPT</h4>
+                  <h4 className="text-xl font-serif font-bold text-brand-secondary mb-1">Neuro & Spine (BPT)</h4>
                   <p className="text-xs font-semibold text-brand-grey uppercase tracking-wider">Certified</p>
                 </div>
               </div>
