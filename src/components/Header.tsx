@@ -10,7 +10,7 @@ const navigation = [
   { name: "Conditions", href: "/conditions" },
   { name: "Home Visit", href: "/home-visit" },
   { name: "About", href: "/about" },
-  { name: "Blog", href: "/blog" },
+  { name: "Health Blog", href: "/blog" },
 ];
 
 export function Header() {

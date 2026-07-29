@@ -9,6 +9,7 @@ import { FadeIn } from "@/components/FadeIn";
 
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { PaediatricBanner } from "@/components/PaediatricBanner";
+import { FAQ } from "@/components/FAQ";
 
 export default function Home() {
   return (
@@ -116,16 +117,16 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: Bone, title: "Back & Neck Pain", desc: "Targeted therapy to relieve chronic lower back pain, sciatica, and cervical spondylosis.", bgImage: "/images/Back%20&%20Neck%20Pain.jpg" },
-              { icon: Dumbbell, title: "Sports Injury Rehab", desc: "Advanced protocols to help athletes recover faster from sprains, strains, and tears.", bgImage: "/images/Sports-Injury-Rehab.jpg" },
-              { icon: Stethoscope, title: "Post Surgery Rehab", desc: "Guided, safe recovery protocols following joint replacements and orthopedic surgeries.", bgImage: "/images/Post-Surgery-Rehab.jpg" },
-              { icon: Flower2, title: "Women's Health", desc: "Compassionate care for prenatal and postnatal discomfort, and pelvic floor dysfunction.", bgImage: "/images/women's-health.jpg" },
-              { icon: HousePlus, title: "Home Visit Services", desc: "Premium, high-quality physiotherapy sessions in the comfort of your own home.", bgImage: "/images/Home-Visit-Services.jpg" },
-              { icon: Activity, title: "Geriatric Physiotherapy", desc: "Improving mobility, balance, and quality of life for elderly patients.", bgImage: "/images/Geriatric-Physiotherapy.jpg" },
+              { icon: Bone, title: "Back & Neck Pain", desc: "Targeted therapy to relieve chronic lower back pain, sciatica, and cervical spondylosis.", bgImage: "/images/Back%20&%20Neck%20Pain.jpg", blogLink: "/blog/back-and-neck-pain" },
+              { icon: Dumbbell, title: "Sports Injury Rehab", desc: "Advanced protocols to help athletes recover faster from sprains, strains, and tears.", bgImage: "/images/Sports-Injury-Rehab.jpg", blogLink: "/blog/sports-injury-rehab" },
+              { icon: Stethoscope, title: "Post Surgery Rehab", desc: "Guided, safe recovery protocols following joint replacements and orthopedic surgeries.", bgImage: "/images/Post-Surgery-Rehab.jpg", blogLink: "/blog/post-surgery-rehab" },
+              { icon: Flower2, title: "Women's Health", desc: "Compassionate care for prenatal and postnatal discomfort, and pelvic floor dysfunction.", bgImage: "/images/women's-health.jpg", blogLink: "/blog/womens-health-physiotherapy" },
+              { icon: HousePlus, title: "Home Visit Services", desc: "Premium, high-quality physiotherapy sessions in the comfort of your own home.", bgImage: "/images/Home-Visit-Services.jpg", blogLink: "/blog/home-visit-services" },
+              { icon: Activity, title: "Geriatric Physiotherapy", desc: "Improving mobility, balance, and quality of life for elderly patients.", bgImage: "/images/Geriatric-Physiotherapy.jpg", blogLink: "/blog/geriatric-physiotherapy" },
             ].map((service, idx) => (
               <FadeIn key={idx} delay={idx * 0.15}>
                 <div 
-                  className={`rounded-3xl p-10 h-full border hover:shadow-xl transition-all group flex flex-col cursor-pointer relative overflow-hidden ${
+                  className={`rounded-3xl p-10 h-full border hover:shadow-xl transition-all group flex flex-col relative overflow-hidden ${
                     service.bgImage ? "border-transparent" : "bg-white border-gray-100 hover:border-brand-primary/20"
                   }`}
                 >
@@ -151,10 +152,19 @@ export default function Home() {
                     <p className={`leading-relaxed flex-grow ${service.bgImage ? "text-gray-200" : "text-brand-grey"}`}>
                       {service.desc}
                     </p>
-                    <div className={`mt-8 flex items-center gap-2 text-sm font-semibold group-hover:gap-3 transition-all ${
-                      service.bgImage ? "text-white" : "text-brand-primary"
-                    }`}>
-                      Learn more <ArrowRight className="w-4 h-4" />
+                    <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 sm:justify-between pt-6 border-t border-white/10 z-20">
+                      <Link href="/contact" className={`flex items-center gap-2 text-sm font-semibold group-hover:gap-3 transition-all ${
+                        service.bgImage ? "text-white" : "text-brand-primary"
+                      }`}>
+                        Book Assessment <ArrowRight className="w-4 h-4" />
+                      </Link>
+                      {service.blogLink && (
+                        <Link href={service.blogLink} className={`flex items-center gap-1.5 text-sm font-medium hover:opacity-100 transition-opacity ${
+                          service.bgImage ? "text-white/70 hover:text-white" : "text-brand-grey hover:text-brand-primary"
+                        }`}>
+                          Read Article <ChevronRight className="w-4 h-4" />
+                        </Link>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -231,6 +241,9 @@ export default function Home() {
           </FadeIn>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQ />
 
       {/* Testimonials */}
       <section className="py-24 px-6 lg:px-8 bg-white">

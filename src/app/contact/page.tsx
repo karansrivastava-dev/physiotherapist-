@@ -34,8 +34,17 @@ export default function Contact() {
                     <label className="text-sm font-semibold text-brand-secondary">Service Needed</label>
                     <select name="service" className="w-full px-5 py-4 rounded-xl border border-gray-200 focus:outline-none focus:border-brand-primary focus:ring-2 focus:ring-brand-primary/20 transition-all bg-gray-50/50 text-gray-700">
                       <option value="">Select an option</option>
-                      <option value="Clinic Visit">Clinic Visit</option>
-                      <option value="Home Visit">Home Visit</option>
+                      <option value="Back & Neck Pain">Back & Neck Pain</option>
+                      <option value="Sports Injury Rehab">Sports Injury Rehab</option>
+                      <option value="Post Surgery Rehab">Post Surgery Rehab</option>
+                      <option value="Women's Health">Women's Health</option>
+                      <option value="Home Visit Services">Home Visit Services</option>
+                      <option value="Geriatric Physiotherapy">Geriatric Physiotherapy</option>
+                      <option value="Postural Correction">Postural Correction</option>
+                      <option value="Preventive Physiotherapy">Preventive Physiotherapy</option>
+                      <option value="Neurological Rehabilitation">Neurological Rehabilitation</option>
+                      <option value="Orthopedic Physiotherapy">Orthopedic Physiotherapy</option>
+                      <option value="Paediatric Physiotherapy">Paediatric Physiotherapy</option>
                       <option value="General Inquiry">General Inquiry</option>
                     </select>
                   </div>

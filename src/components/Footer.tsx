@@ -50,11 +50,11 @@ export function Footer() {
           <div className="lg:col-span-2 lg:col-start-6">
             <h4 className="font-bold text-lg mb-6">Services</h4>
             <ul className="space-y-4 text-brand-grey">
-              <li><Link href="/services/back-pain" className="hover:text-white transition-colors">Back Pain</Link></li>
-              <li><Link href="/services/sports-injury" className="hover:text-white transition-colors">Sports Injury</Link></li>
-              <li><Link href="/services/womens-health" className="hover:text-white transition-colors">Women's Health</Link></li>
-              <li><Link href="/services/post-surgery" className="hover:text-white transition-colors">Post Surgery</Link></li>
-              <li><Link href="/home-visit" className="hover:text-white transition-colors">Home Visit</Link></li>
+              <li><Link href="/blog/back-and-neck-pain" className="hover:text-white transition-colors">Back Pain</Link></li>
+              <li><Link href="/blog/sports-injury-rehab" className="hover:text-white transition-colors">Sports Injury</Link></li>
+              <li><Link href="/blog/womens-health-physiotherapy" className="hover:text-white transition-colors">Women's Health</Link></li>
+              <li><Link href="/blog/post-surgery-rehab" className="hover:text-white transition-colors">Post Surgery</Link></li>
+              <li><Link href="/blog/home-visit-services" className="hover:text-white transition-colors">Home Visit</Link></li>
             </ul>
           </div>
 
@@ -63,7 +63,7 @@ export function Footer() {
             <ul className="space-y-4 text-brand-grey">
               <li><Link href="/about" className="hover:text-white transition-colors">About Deepti</Link></li>
               <li><Link href="/conditions" className="hover:text-white transition-colors">Conditions We Treat</Link></li>
-              <li><Link href="/blog" className="hover:text-white transition-colors">Journal & Tips</Link></li>
+              <li><Link href="/blog" className="hover:text-white transition-colors">Health Blog</Link></li>
               <li><Link href="/testimonials" className="hover:text-white transition-colors">Success Stories</Link></li>
               <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
