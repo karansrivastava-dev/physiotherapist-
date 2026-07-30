@@ -46,7 +46,7 @@ export default function Conditions() {
         <FadeIn delay={0.4} className="mt-20">
           <div className="bg-brand-secondary rounded-[3rem] p-12 lg:p-16 text-center text-white relative overflow-hidden">
              <div className="relative z-10">
-               <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-6">Don't see your specific condition?</h2>
+               <h2 className="text-3xl lg:text-4xl font-serif font-bold mb-6 text-white">Don't see your specific condition?</h2>
                <p className="text-brand-grey text-lg max-w-2xl mx-auto mb-10">
                  We treat a wide variety of neuromuscular and skeletal issues. Contact us directly to discuss your specific symptoms and find out how we can help.
                </p>
