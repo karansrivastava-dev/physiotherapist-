@@ -72,8 +72,8 @@ export default function Contact() {
                 <div>
                   <h4 className="font-bold text-brand-secondary text-xl mb-2">Clinic Location</h4>
                   <p className="text-brand-grey leading-relaxed">
-                    Premium Clinic Layout<br/>
-                    Lucknow, Uttar Pradesh 226017<br/>
+                    Rajajipuram,<br/>
+                    Lucknow, UP 226017<br/>
                     India
                   </p>
                 </div>

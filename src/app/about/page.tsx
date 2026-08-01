@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FadeIn } from "@/components/FadeIn";
 import { Award, Clock, GraduationCap, Users } from "lucide-react";
-
+import { BentoGallery } from "@/components/BentoGallery";
 export default function About() {
   return (
     <div className="flex flex-col min-h-screen pt-32 pb-24">
@@ -50,8 +50,8 @@ export default function About() {
                     <GraduationCap className="w-6 h-6" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-brand-secondary text-lg">BPT, MPT</h4>
-                    <p className="text-sm text-brand-grey">Advanced Qualifications</p>
+                    <h4 className="font-bold text-brand-secondary text-lg">Neuro & Spine (BPT)</h4>
+                    <p className="text-sm text-brand-grey">Certified</p>
                   </div>
                 </div>
                 <div className="flex gap-4 items-start">
@@ -86,6 +86,8 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      <BentoGallery />
     </div>
   );
 }

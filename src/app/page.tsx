@@ -10,7 +10,7 @@ import { FadeIn } from "@/components/FadeIn";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { PaediatricBanner } from "@/components/PaediatricBanner";
 import { FAQ } from "@/components/FAQ";
-
+import { BentoGallery } from "@/components/BentoGallery";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen pt-24">
@@ -241,6 +241,9 @@ export default function Home() {
           </FadeIn>
         </div>
       </section>
+
+      {/* Bento Gallery - Patient Care */}
+      <BentoGallery />
 
       {/* FAQ Section */}
       <FAQ />

@@ -74,7 +74,7 @@ export function Footer() {
             <ul className="space-y-6 text-brand-grey">
               <li className="flex gap-4 items-start">
                 <MapPin className="w-6 h-6 text-brand-primary shrink-0" />
-                <span>Premium Clinic Layout<br/>Lucknow, UP 226017</span>
+                <span>Rajajipuram,<br/>Lucknow, UP 226017</span>
               </li>
               <li className="flex gap-4 items-center">
                 <Phone className="w-5 h-5 text-brand-primary shrink-0" />
