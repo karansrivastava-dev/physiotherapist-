@@ -18,7 +18,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <FadeIn direction="right">
             <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden bg-gray-100 shadow-2xl">
-              <Image src="/images/doctor.png" alt="Dr. Deepti Mishra" fill className="object-cover" priority />
+              <Image src="/images/herotop.png" alt="Dr. Deepti Mishra" fill className="object-cover -scale-x-100" priority />
             </div>
           </FadeIn>
           

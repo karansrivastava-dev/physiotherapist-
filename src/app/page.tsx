@@ -50,20 +50,20 @@ export default function Home() {
             
             <FadeIn delay={0.5}>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-gray-100">
-                <div>
-                  <h4 className="text-3xl font-serif font-bold text-brand-secondary mb-1">15+</h4>
+                <div className="group cursor-default hover:-translate-y-1 transition-transform duration-300">
+                  <h4 className="text-3xl font-serif font-bold text-brand-secondary mb-1 group-hover:text-brand-primary transition-colors">15+</h4>
                   <p className="text-xs font-semibold text-brand-grey uppercase tracking-wider">Years Exp.</p>
                 </div>
-                <div>
-                  <h4 className="text-3xl font-serif font-bold text-brand-secondary mb-1">5k+</h4>
+                <div className="group cursor-default hover:-translate-y-1 transition-transform duration-300">
+                  <h4 className="text-3xl font-serif font-bold text-brand-secondary mb-1 group-hover:text-brand-primary transition-colors">5k+</h4>
                   <p className="text-xs font-semibold text-brand-grey uppercase tracking-wider">Patients</p>
                 </div>
-                <div>
-                  <h4 className="text-3xl font-serif font-bold text-brand-secondary mb-1 flex items-center gap-1">4.9 <Star className="w-4 h-4 fill-brand-primary text-brand-primary" /></h4>
+                <div className="group cursor-default hover:-translate-y-1 transition-transform duration-300">
+                  <h4 className="text-3xl font-serif font-bold text-brand-secondary mb-1 flex items-center gap-1 group-hover:text-brand-primary transition-colors">4.9 <Star className="w-4 h-4 fill-brand-primary text-brand-primary" /></h4>
                   <p className="text-xs font-semibold text-brand-grey uppercase tracking-wider">Google Rating</p>
                 </div>
-                <div>
-                  <h4 className="text-xl font-serif font-bold text-brand-secondary mb-1">Neuro & Spine (BPT)</h4>
+                <div className="group cursor-default hover:-translate-y-1 transition-transform duration-300">
+                  <h4 className="text-xl font-serif font-bold text-brand-secondary mb-1 group-hover:text-brand-primary transition-colors">Neuro & Spine (BPT)</h4>
                   <p className="text-xs font-semibold text-brand-grey uppercase tracking-wider">Certified</p>
                 </div>
               </div>
@@ -71,17 +71,19 @@ export default function Home() {
           </div>
           
           <div className="relative">
-            <FadeIn delay={0.4} direction="left" className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/5] bg-gray-200">
-              <Image src="/images/doctor.png" alt="Dr. Deepti Mishra Physiotherapist" fill className="object-cover" priority />
-            </FadeIn>
+            <div className="animate-float">
+              <FadeIn delay={0.4} direction="left" className="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl aspect-[4/5] bg-gray-200">
+                <Image src="/images/herotop.png" alt="Dr. Deepti Mishra Physiotherapist" fill className="object-cover" priority quality={100} />
+              </FadeIn>
+            </div>
             {/* Decorative Elements */}
-            <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-brand-softpink rounded-full -z-10 blur-3xl opacity-60"></div>
-            <div className="absolute -top-8 -right-8 w-48 h-48 bg-brand-mint rounded-full -z-10 blur-3xl opacity-60"></div>
+            <div className="absolute -bottom-8 -left-8 w-48 h-48 bg-brand-softpink rounded-full -z-10 blur-3xl opacity-60 animate-pulse" style={{ animationDuration: '4s' }}></div>
+            <div className="absolute -top-8 -right-8 w-48 h-48 bg-brand-mint rounded-full -z-10 blur-3xl opacity-60 animate-pulse" style={{ animationDuration: '6s', animationDelay: '1s' }}></div>
             
-            <FadeIn delay={0.7} direction="up" className="absolute -bottom-6 -left-6 z-20 bg-white p-6 rounded-2xl shadow-xl max-w-[220px] border border-gray-50 glass">
+            <FadeIn delay={0.7} direction="up" className="absolute -bottom-6 -right-6 z-20 bg-white/95 backdrop-blur-xl p-6 rounded-2xl shadow-2xl max-w-[220px] border border-gray-100 hover:scale-105 transition-all duration-300 cursor-pointer group">
               <div className="flex items-center gap-3 mb-2">
-                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                  <CheckCircle2 className="w-6 h-6 text-green-600" />
+                <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center group-hover:bg-green-200 transition-colors">
+                  <CheckCircle2 className="w-6 h-6 text-green-600 group-hover:scale-110 transition-transform" />
                 </div>
                 <div>
                   <p className="text-xs text-brand-grey font-semibold">Pain Relief</p>

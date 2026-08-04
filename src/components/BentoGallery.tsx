@@ -9,9 +9,10 @@ const bentoImages = [
     imageClassName: "object-top",
   },
   {
-    src: "https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=1000&auto=format&fit=crop",
+    src: "/images/g6.png",
     alt: "Patient rehabilitation exercise",
     className: "md:col-span-1 md:row-span-1",
+    imageClassName: "object-top",
   },
   {
     src: "/images/g5.jpeg",
@@ -62,7 +63,7 @@ export function BentoGallery() {
                 src={image.src} 
                 alt={image.alt} 
                 fill 
-                className="object-cover transition-transform duration-700 group-hover:scale-105" 
+                className={`object-cover transition-transform duration-700 group-hover:scale-105 ${image.imageClassName || ''}`} 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </FadeIn>

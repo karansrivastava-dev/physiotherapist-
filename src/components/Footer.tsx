@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRight, MapPin, Phone, Mail } from "lucide-react";
+import { FacebookIcon, InstagramIcon, LinkedinIcon } from "@/components/SocialIcons";
 
 export function Footer() {
   return (
@@ -38,11 +39,14 @@ export function Footer() {
               Helping you move better and live pain-free with personalized, evidence-based physiotherapy care in a premium environment.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-primary hover:border-brand-primary transition-colors font-bold text-sm">
-                IG
+              <a href="#" aria-label="Instagram" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-primary hover:border-brand-primary transition-colors">
+                <InstagramIcon className="w-5 h-5" />
               </a>
-              <a href="#" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-primary hover:border-brand-primary transition-colors font-bold text-sm">
-                IN
+              <a href="#" aria-label="Facebook" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-primary hover:border-brand-primary transition-colors">
+                <FacebookIcon className="w-5 h-5" />
+              </a>
+              <a href="#" aria-label="LinkedIn" className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-brand-primary hover:border-brand-primary transition-colors">
+                <LinkedinIcon className="w-5 h-5" />
               </a>
             </div>
           </div>
